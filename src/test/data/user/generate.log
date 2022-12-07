@@ -1,0 +1,30 @@
+Scanning files /media/apajo/data/hygen/.hygen/_templates files:
+
+
+
+Found 12 files:
+
+    
+        0: /media/apajo/data/hygen/.hygen/_templates/spring/model/controller/PermissionCrudController.java:
+    
+        1: /media/apajo/data/hygen/.hygen/_templates/spring/model/controller/PermissionListController.java:
+    
+        2: /media/apajo/data/hygen/.hygen/_templates/spring/model/controller/PermissionViewController.java:
+    
+        3: /media/apajo/data/hygen/.hygen/_templates/spring/model/model/Permission.java:
+    
+        4: /media/apajo/data/hygen/.hygen/_templates/spring/model/repository/PermissionRepository.java:
+    
+        5: /media/apajo/data/hygen/.hygen/_templates/spring/model/service/PermissionDao.java:
+    
+        6: /media/apajo/data/hygen/.hygen/_templates/spring/model/src/test/data/tmp/controller/PermissionModelCrudController.java:
+    
+        7: /media/apajo/data/hygen/.hygen/_templates/spring/model/src/test/data/tmp/controller/PermissionModelListController.java:
+    
+        8: /media/apajo/data/hygen/.hygen/_templates/spring/model/src/test/data/tmp/controller/PermissionModelViewController.java:
+    
+        9: /media/apajo/data/hygen/.hygen/_templates/spring/model/src/test/data/tmp/model/PermissionModel.java:
+    
+        10: /media/apajo/data/hygen/.hygen/_templates/spring/model/src/test/data/tmp/repository/PermissionModelRepository.java:
+    
+        11: /media/apajo/data/hygen/.hygen/_templates/spring/model/src/test/data/tmp/service/PermissionModelDao.java:
