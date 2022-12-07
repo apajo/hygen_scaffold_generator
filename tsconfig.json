@@ -31,5 +31,10 @@
     "node_modules",
     ".vscode",
     ".idea"
+  ],
+  "files": [
+    "src/index.ts",
+    "src/.hygen.ts",
+    "src/prompt.ts"
   ]
 }

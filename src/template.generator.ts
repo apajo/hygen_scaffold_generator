@@ -1,9 +1,10 @@
 const ScanDir = require('./scandir');
+const FileTransformer = require('./file.transformer');
 const fs = require('fs');
 const fse = require('fs-extra');
 
 class TemplateGenerator {
-    generate (file: string, className: string, namespace: string, h: any) {
+    static generate (file: string, className: string, namespace: string, h: any) {
         if (!fs.statSync(file).isFile()) {
             console.error('Is not file: ' + file);
             return;
@@ -18,7 +19,7 @@ class TemplateGenerator {
             template.content,
             [
                 {search: className, replace: '<%= className %>'},
-                {search: className.toLocaleLowerCase(), replace: '<%= h.changeCase.lower(className) %>'},
+                {search: className.toLocaleLowerCase(), replace: '<%= tag %>'},
                 {search: namespace, replace: '<%= namespace %>'},
             ]
         )
@@ -59,11 +60,11 @@ class TemplateGenerator {
 
     }
 
-    scanDir (s: string): [] {
+    static scanDir (s: string): [] {
         return ScanDir.getFilesSync(s);
     };
 
-    copydir (from: string, to: string): void {
+    static copyDir (from: string, to: string): void {
         fse.copySync(from, to);
     };
 }

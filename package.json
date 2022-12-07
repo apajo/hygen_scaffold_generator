@@ -9,7 +9,8 @@
     "license": "BSD-3-Clause",
     "type": "commonjs",
     "scripts": {
-        "setup": "ln -s .hygen/dist/index.js ../.hygen.js",
+        "setup": "yarn build && yarn link",
+        "link": "ln -s .hygen/dist/.hygen.js ../.hygen.js && ln -s .hygen/dist/prompt.js _templates/generator/template/prompt.js",
         "start": "tsc -w",
         "build": "tsc",
         "serve": "nodemon --inspect --watch dist/ -d 1 ./dist/index.js",
